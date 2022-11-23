@@ -36,9 +36,8 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 }
 
 .main-container {
-	max-width: 330px;
+	width: 330px;
 	margin: 0 auto;
-	padding: ;
 }
 
 .were {
@@ -90,6 +89,16 @@ button {
 	border-radius: 25px;
 	border: none;
 	cursor: pointer;
+}
+
+.error {
+	color: hsl(0, 93%, 68%);
+}
+
+/* ******   HIDE CLASS  ***** */
+
+.hide {
+	display: none;
 }
 
 /* ******* MEDIA QUERIES ***** */
