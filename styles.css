@@ -55,12 +55,12 @@ h1 {
 	line-height: 2.4rem;
 }
 
-p {
+/* p {
 	margin-top: 1.4rem;
 	text-align: center;
 	color: hsl(0, 36%, 70%, 0.7);
 	font-weight: 400;
-}
+} */
 
 .email-block {
 	position: relative;
@@ -69,6 +69,7 @@ p {
 input {
 	width: 100%;
 	margin-top: 1.4rem;
+	margin-bottom: 0.7rem;
 	padding: 1rem 0 1rem 1rem;
 	border-radius: 25px;
 	border: 1px solid hsl(0, 36%, 70%, 0.5);
@@ -82,7 +83,7 @@ input::placeholder {
 button {
 	position: absolute;
 	right: 0;
-	bottom: 0;
+	bottom: 0.7rem;
 	width: 4rem;
 	height: 50px;
 	background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
@@ -91,13 +92,18 @@ button {
 	cursor: pointer;
 }
 
-.error {
-	color: hsl(0, 93%, 68%);
+label {
+	position: absolute;
+	bottom: 0.5rem;
+	right: 5rem;
+	display: none;
 }
 
-/* ******   HIDE CLASS  ***** */
-
-.hide {
+.error {
+	font-weight: 400;
+	font-size: 0.8rem;
+	color: hsl(0, 93%, 68%, 0.7);
+	margin-left: 2.5rem;
 	display: none;
 }
 

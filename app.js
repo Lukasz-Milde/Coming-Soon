@@ -1,25 +1,26 @@
 const form = document.querySelector(".email-block");
-const email = document.getElementById("email");
-const btnSubmit = document.getElementByI("btn");
-const errorMsg = document.querySelector(".error");
+const input = document.querySelector("input");
+const btn = document.querySelector(".btn");
+const error = document.querySelector(".error");
+const label = document.querySelector("label");
 
-form.addEventListener("submit", emailValidation);
-btnSubmit.addEventListener("click", emailValidation);
+form.addEventListener("submit", emailVal);
+btn.addEventListener("click", emailVal);
 
-function emailValidation(e) {
-	const inputValue = email.textContent;
+function emailVal(e) {
+	e.preventDefault();
+
+	const inputValue = input.value.trim;
 
 	if (!isEmail(inputValue)) {
-		errorMsg.classList.remove("hide");
+		error.style.display = "block";
+		label.style.display = "block";
+	} else {
+		error.style.display = "none";
+		label.style.display = "none";
 	}
 }
-function isEmail(email) {
-	return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(input);
+
+function isEmail(input) {
+	return /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(input);
 }
-// const validateEmail = (email) => {
-//   return String(email)
-//     .toLowerCase()
-//     .match(
-//       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-//     );
-// };

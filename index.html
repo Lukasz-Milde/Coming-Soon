@@ -39,14 +39,18 @@
 					Add your email below to stay up-to-date with announcements and our
 					launch deals.
 				</p>
-				<form class="email-block" action="/" method="GET">
-					<input id="email" type="email" placeholder="Email Address" required />
-					<button id="btn" type="submit">
+				<form class="email-block" action="#" method="GET">
+					<input id="email" type="email" name="email" placeholder="Email Address" required />
+					<label for="email">
+						<img src="images/icon-error.svg" alt="invalid" />
+					</label>
+					<button class="btn" type="submit">
 						<img src="images/icon-arrow.svg" alt="arrow icon" />
 					</button>
+					</div>
+          <small class="error">Please provide a valid email</small>
+					</div>
 				</form>
-				<p class="error hide">Please provide a valid email</p>
-			</div>
 			<img
 				class="img-desktop"
 				src="images/hero-desktop.jpg"
