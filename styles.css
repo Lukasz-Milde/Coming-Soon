@@ -92,7 +92,7 @@ button {
 	cursor: pointer;
 }
 
-label {
+.ex-mark {
 	position: absolute;
 	bottom: 1.3rem;
 	right: 5rem;
