@@ -14,7 +14,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 ___________ STYLES ___________
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
-/* ******* MOBILE DESIGN ***** */
+/* ******* MOBILE DESIGN ******************************** */
 
 .img-desktop,
 .background {
@@ -24,7 +24,14 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 .main {
 	max-width: 375px;
 	margin: 0 auto;
+	background-color: linear-gradient(
+		135deg,
+		hsl(0, 0%, 100%),
+		hsl(0, 100%, 98%)
+	);
 }
+
+/* ******* HERO AND H1 ************************************ */
 
 .logo {
 	margin: 1.3rem 0 1.3rem 1.3rem;
@@ -63,6 +70,8 @@ p {
 	line-height: 1.5rem;
 }
 
+/* ********** FORM *********************************** */
+
 form {
 	position: relative;
 }
@@ -74,6 +83,7 @@ input {
 	padding: 1rem 0 1rem 1rem;
 	border-radius: 25px;
 	border: 1px solid hsl(0, 36%, 70%, 0.5);
+	outline: none;
 }
 
 input::placeholder {
@@ -87,8 +97,14 @@ button {
 	bottom: 0.7rem;
 	width: 6rem;
 	height: 50px;
-	background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+	background: linear-gradient(
+		135deg,
+		hsl(0, 80%, 86%),
+		hsla(0, 52%, 80%, 0.781)
+	);
 	border-radius: 25px;
+	box-shadow: 0px 0px 18px 1px #f4aaab82;
+	outline: none;
 	border: none;
 	cursor: pointer;
 }
@@ -131,4 +147,27 @@ button:focus {
 	border-color: red;
 }
 
-/* ******* MEDIA QUERIES ***** */ ;
+/* ******* MEDIA QUERIES ***************************** */
+
+@media screen and (min-width: 1440px) {
+	.img-mobile {
+		display: none;
+	}
+
+	.main-container {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 60%;
+		height: 100vh;
+		background-image: url(./images/bg-pattern-desktop.svg);
+		background-size: cover;
+		padding: 14rem 20rem 6rem 6rem;
+	}
+
+	.logo {
+		position: absolute;
+		z-index: 2;
+		left: 6rem;
+	}
+}
