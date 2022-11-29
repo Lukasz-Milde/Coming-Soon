@@ -31,24 +31,24 @@
 			<img class="img-mobile" src="images/hero-mobile.jpg" alt="model" />
 			<div class="main-container">
 				<h1>
-					<span class="were">WE'RE</span> COMING <br />
-					SOON
+					<span class="were">WE'RE</span> COMING <br/>SOON
 				</h1>
 				<p>
 					Hello fellow shoppers! We're currently building our new fashion store.
 					Add your email below to stay up-to-date with announcements and our
 					launch deals.
 				</p>
-				<form action="#" method="GET">
-					<label for="email"></label>
-					<input id="email" type="email" name="email"  placeholder="Email Address" required />
-					
-					<img src="images/icon-error.svg" alt="invalid" class="ex-mark"/>
-					<button class="btn" type="submit">
-						<img src="images/icon-arrow.svg" alt="arrow icon"  />
-					</button>
+				<form class="form" action="/">
+					<div>
+						<label for="email"></label>
+						<input id="email" type="text" name="email"  placeholder="Email Address" />
+						<img src="images/icon-error.svg" alt="invalid" class="ex-mark hide"/>
+						<button class="btn" type="submit">
+							<img src="images/icon-arrow.svg" alt="arrow icon"  />
+						</button>
 					</div>
-          <small class="error">Please provide a valid email</small>
+					</div>
+          	<small class="error hide">Please provide a valid email</small>
 					</div>
 				</form>
 			<img
@@ -60,3 +60,4 @@
 		<script src="app.js"></script>
 	</body>
 </html>
+ 

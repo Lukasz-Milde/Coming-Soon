@@ -1,24 +1,31 @@
-const form = document.getElementsByTagName("form");
-const input = document.getElementById("email");
-const btn = document.querySelector(".btn");
-const error = document.querySelector(".error");
-const exMark = document.querySelector(".exMark");
+const form = document.querySelector(".form");
+const email = document.getElementById("email");
+const exMark = document.querySelector(".ex-mark");
+const errorMsg = document.querySelector(".error");
 
-form.addEventListener("submit", emailVal);
-btn.addEventListener("click", emailVal);
-
-function emailVal(e) {
+form.addEventListener("submit", (e) => {
 	e.preventDefault();
+	validateEmail();
+});
 
-	const inputValue = input.value.trim;
-	const validRegex =
-		/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+const isValidEmail = (email) => {
+	const re =
+		/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	return re.test(String(email).toLowerCase());
+};
 
-	if (inputValue.match(validRegex)) {
-		error.style.display = "none";
-		label.style.display = "none";
+const validateEmail = () => {
+	const emailValue = email.value.trim();
+
+	if (emailValue === "") {
+		exMark.classList.remove("hide");
+		errorMsg.classList.remove("hide");
+		email.classList.add("red-border");
+	} else if (!isValidEmail(emailValue)) {
+		exMark.classList.remove("hide");
+		errorMsg.classList.remove("hide");
+		email.classList.add("red-border");
 	} else {
-		error.style.display = "block";
-		label.style.display = "block";
+		email.classList.add("green-border");
 	}
-}
+};

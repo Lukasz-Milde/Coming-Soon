@@ -61,8 +61,7 @@ h1 {
 	color: hsl(0, 36%, 70%, 0.7);
 	font-weight: 400;
 } */
-
-.email-block {
+form {
 	position: relative;
 }
 
@@ -92,11 +91,14 @@ button {
 	cursor: pointer;
 }
 
+button:hover,
+button:focus {
+}
+
 .ex-mark {
 	position: absolute;
-	bottom: 1.3rem;
+	bottom: 1.55rem;
 	right: 5rem;
-	display: none;
 }
 
 .error {
@@ -104,7 +106,18 @@ button {
 	font-size: 0.8rem;
 	color: hsl(0, 93%, 68%, 0.7);
 	margin-left: 2.5rem;
+}
+
+.hide {
 	display: none;
 }
 
-/* ******* MEDIA QUERIES ***** */
+.green-border {
+	border-color: green;
+}
+
+.red-border {
+	border-color: red;
+}
+
+.redBorder/* ******* MEDIA QUERIES ***** */;
