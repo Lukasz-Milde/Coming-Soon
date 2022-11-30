@@ -40,10 +40,16 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
 .img-mobile {
 	margin-bottom: 3.5rem;
+	margin-left: -8.7%;
+	width: 375px;
 }
 
 .main-container {
 	width: 85%;
+	margin: 0 auto;
+}
+
+.text-container {
 	margin: 0 auto;
 }
 
@@ -154,20 +160,12 @@ button:focus {
 		display: none;
 	}
 
-	.main-container {
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		width: 60%;
-		height: 100vh;
-		background-image: url(./images/bg-pattern-desktop.svg);
-		background-size: cover;
-		padding: 14rem 20rem 6rem 6rem;
+	.img-desktop {
+		display: block;
 	}
 
-	.logo {
-		position: absolute;
-		z-index: 2;
-		left: 6rem;
+	.desktop-design {
+		display: flex;
+		flex-direction: row;
 	}
 }

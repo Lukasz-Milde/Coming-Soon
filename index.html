@@ -22,42 +22,47 @@
 	</head>
 	<body>
 		<div class="main">
-			<img
+			<!-- <img
 				class="background"
 				src="images/bg-pattern-desktop.svg"
 				alt="background"
-			/>
-			<img class="logo" src="images/logo.svg" alt="logo Base Apparel" />
-			<img class="img-mobile" src="images/hero-mobile.jpg" alt="model" />
+			/> -->
 			<div class="main-container">
-				<h1>
-					<span class="were">WE'RE</span> COMING <br/>SOON
-				</h1>
-				<p>
-					Hello fellow shoppers! We're currently building our new fashion store.
-					Add your email below to stay up-to-date with announcements and our
-					launch deals.
-				</p>
-				<form class="form" action="/">
-					<div>
-						<label for="email"></label>
-						<input id="email" type="text" name="email"  placeholder="Email Address" />
-						<img src="images/icon-error.svg" alt="invalid" class="ex-mark hide"/>
-						<button class="btn" type="submit">
-							<img src="images/icon-arrow.svg" alt="arrow icon"  />
-						</button>
+				<div class="desktop-design">
+					<div class="left-c">
+						<img class="logo" src="images/logo.svg" alt="logo Base Apparel" />
+						<img class="img-mobile" src="images/hero-mobile.jpg" alt="model" />
+						<div class="text-container">
+							<h1>
+								<span class="were">WE'RE</span> COMING <br/>SOON
+							</h1>
+							<p>
+								Hello fellow shoppers! We're currently building our new fashion store.
+								Add your email below to stay up-to-date with announcements and our
+								launch deals.
+							</p>
+							<form class="form" action="/">
+								<div>
+									<label for="email"></label>
+									<input id="email" type="text" name="email"  placeholder="Email Address" />
+									<img src="images/icon-error.svg" alt="invalid" class="ex-mark hide"/>
+									<button class="btn" type="submit">
+										<img src="images/icon-arrow.svg" alt="arrow icon"  />
+									</button>
+								</div>
+								</div>
+									<small class="error hide">Please provide a valid email</small>
+								</div>				
+							</form>
+						</div>
 					</div>
-					</div>
-          	<small class="error hide">Please provide a valid email</small>
-					</div>
-				</form>
+				  <img
+					class="img-desktop"
+					src="images/hero-desktop.jpg"
+					alt="model"
+				   />
+				</div>
 			</div>
-			<img
-				class="img-desktop"
-				src="images/hero-desktop.jpg"
-				alt="model"
-			/>
-		
 		<script src="app.js"></script>
 	</body>
 </html>
