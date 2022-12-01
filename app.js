@@ -3,16 +3,22 @@ const email = document.getElementById("email");
 const exMark = document.querySelector(".ex-mark");
 const errorMsg = document.querySelector(".error");
 
+// Function prevent default email validation
+
 form.addEventListener("submit", (e) => {
 	e.preventDefault();
 	validateEmail();
 });
+
+// Regex test function
 
 const isValidEmail = (email) => {
 	const re =
 		/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 	return re.test(String(email).toLowerCase());
 };
+
+// Email validation function
 
 const validateEmail = () => {
 	const emailValue = email.value.trim();

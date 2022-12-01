@@ -32,7 +32,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 	);
 }
 
-/* ******* HERO AND H1 ************************************ */
+/* ******* HERO AND TEXT ************************************ */
 
 .logo {
 	margin: 1.3rem 0 1.3rem 1.3rem;
@@ -138,7 +138,7 @@ button:focus {
 	font-weight: 400;
 	font-size: 0.8rem;
 	color: hsl(0, 93%, 68%, 0.7);
-	margin-left: 2.5rem;
+	margin-left: 1rem;
 }
 
 .hide {
@@ -164,6 +164,7 @@ button:focus {
 
 	.logo2 {
 		display: block;
+		margin-bottom: 7rem;
 	}
 
 	.img-desktop {
@@ -180,12 +181,13 @@ button:focus {
 		top: 0;
 		height: 100vh;
 		width: 100vw;
-		padding-left: 10rem;
+		padding-left: 14rem;
 		background-image: url(./images/bg-pattern-desktop.svg);
+		background-size: cover;
 	}
 
 	.text-container {
-		max-width: 35vw;
+		max-width: 30vw;
 		margin-left: 0;
 		margin-bottom: 0;
 		margin-top: 10vh;
@@ -193,7 +195,7 @@ button:focus {
 
 	h1 {
 		margin-top: 5rem;
-		line-height: 5rem;
+		line-height: 5.5rem;
 		font-weight: 400;
 	}
 
